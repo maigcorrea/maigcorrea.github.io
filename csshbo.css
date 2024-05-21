@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Rethink Sans', sans-serif;
+    color:white;
+}
+
+ nav a{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    opacity: 1;
+    padding: 0% 25px;
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: small;
+    font-weight: bold;
+} 
+
+nav{
+    display: flex; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /*Para que el filtro desenfoque se aplique correctamente la damos transparencia */
+    padding: 10px;
+    position: fixed;
+    width: 100%; 
+    top:0; 
+    backdrop-filter: blur(20px);   /*Filtro que le da desenfoque al nav*/
+}
+
+nav a:nth-last-child(1){
+    background-color:rgb(197, 90, 197);
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+#barbie >div{
+   width: 60%;
+   text-align: center;
+   font-size: 13px;
+   margin-left: 5%;
+}
+
+#barbie div>div{ 
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-bottom: 30px;
+ } 
+ 
+#barbie a{
+    display:flex;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    padding:10px 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#barbie img:first-child{
+    
+    width:20%;
+    margin:0 auto;
+    padding-bottom: 10px;
+}
+
+#barbie{
+    background: url("./imgProyecto/img/foto\ barbie\ verdadera\ copia.jpg");  
+    background-size: cover;
+    background-position-x: 60%;
+    color: white;
+    padding: 15% 0;
+}
+
+ #no_perder{
+    background: url(./imgProyecto/img/thelastofus_leadimage\ \(1\).avif);
+    background-size: cover;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#no_perder h2{
+    padding-left: 3%;
+    font-size: 50px;
+}
+
+#seccion3{
+    background: url(./imgProyecto/img/bluebeetle_takeover_btm_desktop.avif);
+    background-size: cover;
+    background-position-x:100px;
+    padding: 3% 0;
+}
+
+#seccion3 >div{
+    text-align: center;
+    width: 30%;
+    margin:0 10%
+}
+
+#seccion3 img{
+    width: 40%;
+    padding-bottom: 10%;
+}
+
+#seccion3 a{
+    text-decoration: none;
+    color:white;
+    padding:10px 35px;
+    border:solid white 2px;
+    border-radius: 20px;   
+}
+
+#seccion3 p{
+    margin-bottom:10%;
+}
+
+#seccion4{
+    background: url(./imgProyecto/img/hbo_max_background_faded.webp);
+    background-size: cover;
+    padding: 5%;
+    background-position: 0;
+}
+
+#seccion4 #bloque_img2{
+    
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+#bloque_img2 img{
+    width: 45%;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#seccion4>div{
+    display: flex;
+    align-items: center; 
+    
+}
+
+#seccion4 #texto_4{
+    width: 55%;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+#texto_4 h2{
+    padding-bottom: 15px;
+}
+
+
+#seccion5{
+    background: url(./imgProyecto/img/frinds_background.avif);
+    background-size: cover;
+    padding:3%
+}
+
+/* He puesto juntas las secciones: seccion5 y no_perder mediante una clase
+ ya que ambas comparten la misma estructura, por lo que creo que es más eficiente*/
+
+.img_horizontales{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img_horizontales img{
+    width: 23%;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+/* Esta clase corresponde a las imágenes que van al lado del texto en las secciones: sección5 y no_perder */
+
+.img_conTexto{  
+    width: 50%;
+}
+
+/* Esta clase corresponde a los textos que van al lado de las imágenes en las secciones5 y no_perder */
+.texto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#seccion5>div>div{
+    font-size: 20px;
+    flex-direction: column;
+}
+
+#no_perder>div>div{
+    max-width: 35%;
+}
+
+#no_perder>div>div p{
+    font-size: 20px;
+    padding-left:3%;
+} 
+
+#seccion5 h2{ 
+    padding-bottom: 10px;
+}
+
+#seccion6{
+    background: url(./imgProyecto/img/kids-bg.avif);
+    background-size: cover;
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+}
+
+#seccion6 h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+#seccion6 img{
+    width: 20%;
+}
+
+#seccion6 p{
+    flex-direction: column;
+}
+
+#seccion6>div{
+    display: flex;
+    align-items: baseline;
+    padding-top: 5%;
+}
+
